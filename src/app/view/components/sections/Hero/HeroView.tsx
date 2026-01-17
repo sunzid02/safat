@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { HeroModel } from "../../../../model/siteModel";
-import heroPhoto from "../../../../../../public/assets/travel/germany.jpg";
+import heroPhoto from "../../../../../../public/assets/travel/pro_pic.jpg";
 import Icon from "../../ui/Icon/Icon";
 
 type Props = { hero: HeroModel };
@@ -19,7 +19,7 @@ export default function HeroView({ hero }: Props) {
       <div className="hero-grid">
         <div className="hero-media" aria-hidden="true">
           <img className="hero-photo" src={heroPhoto} alt="" />
-          <div className="hero-caption">Borussia-Park, Mönchengladbach, Germany 🇩🇪</div>
+          <div className="hero-caption">Las Vegas, USA</div>
         </div>
 
         <div className="hero-content">
@@ -73,7 +73,7 @@ export default function HeroView({ hero }: Props) {
             <div className="hero-links">
               {hero.cta.links.map((l) => (
                 
-               <a   key={l.url}
+               <a key={l.url}
                   className={`hero-icon-btn is-${l.icon}`}
                   href={l.url}
                   target="_blank"
@@ -90,20 +90,11 @@ export default function HeroView({ hero }: Props) {
             <div className="hero-resume-group" aria-label="Download resumes">
               <a
                 className="hero-resume-btn"
-                href="/resume/Resume_Sarker_Sunzid_Mahmud.pdf"
-                download="Resume_Sarker_Sunzid_Mahmud.pdf"
+                href="/resume/Resume_Sarker_Safat_Mahmud.pdf"
+                download="Resume_Sarker_Safat_Mahmud.pdf"
                 aria-label="Download Resume English"
               >
                 Resume (ENG)
-              </a>
-
-              <a
-                className="hero-resume-btn"
-                href="/resume/Lebenslauf_Sarker_Sunzid_Mahmud.pdf"
-                download="Lebenslauf_Sarker_Sunzid_Mahmud.pdf"
-                aria-label="Download Resume German"
-              >
-                Lebenslauf (DE)
               </a>
             </div>
 
