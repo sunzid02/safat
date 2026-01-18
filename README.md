@@ -5,45 +5,9 @@ This repository contains the source code for my personal portfolio website, buil
 The goal of this project is to present my professional experience, projects, and personal journey in a clean, fast, and maintainable way while following solid software engineering principles.
 
 🌐 Live Website  
-https://sunzid02.github.io/
-
+https://sunzid02.github.io/safat/
 ---
 
-## About Me
-
-I am a Full Stack Developer with 5+ years of experience building web applications across Europe and Asia.
-
-I enjoy:
-- Designing clean and scalable APIs
-- Improving performance through optimization and caching
-- Building maintainable systems that teams can grow with
-- Turning complex problems into simple, usable solutions
-
-Alongside development, I value clarity, consistency, and long term thinking in both code and life.
-
----
-
-## Tech Stack
-
-**Frontend**
-- React
-- TypeScript
-- Vite
-- CSS (custom, no heavy UI frameworks)
-
-**Architecture**
-- MVC inspired structure
-- Clear separation of Model, View, and Controller
-- Reusable UI components
-- Data driven sections instead of hardcoded content
-
-**Tooling**
-- GitHub Pages
-- GitHub Actions (CI build + deploy)
-- ESLint
-- Modern ES Modules
-
----
 
 ## Project Structure
 
@@ -115,23 +79,3 @@ base: "/"
 Deployment runs automatically on push to the `main` branch using GitHub Actions.
 
 ---
-
-## Why This Portfolio
-
-This portfolio is not just a design showcase.
-
-It reflects:
-- How I structure real world projects
-- How I think about scalability and maintainability
-- My attention to detail in UI and UX
-- My personal journey beyond just code
-
----
-
-## Contact
-
-If you would like to connect, collaborate, or just say hello:
-
-- Website: https://sunzid02.github.io/
-- LinkedIn: https://www.linkedin.com/in/sarkersunzid
-- GitHub: https://github.com/sunzid02
