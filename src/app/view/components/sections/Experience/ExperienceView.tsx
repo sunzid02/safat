@@ -1,14 +1,16 @@
 import { useState } from "react";
 import type { ExperienceModel } from "../../../../model/siteModel";
+import type { ResearchExperienceModel } from "../../../../model/siteModel";
 import SectionTitleView from "../../ui/SectionTitle/SectionTitleView";
 import ExperienceItemView from "./ExperienceItemView";
 import "./experience.css";
 
 type Props = {
   experience: ExperienceModel;
+  researchExperience: ResearchExperienceModel;
 };
 
-export default function ExperienceView({ experience }: Props) {
+export default function ExperienceView({ experience, researchExperience }: Props) {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
@@ -18,6 +20,24 @@ export default function ExperienceView({ experience }: Props) {
       <div className="exp">
         <div className="exp-list">
           {experience.items.map((item, idx) => (
+            <ExperienceItemView
+              key={`${item.title}-${item.when}`}
+              title={item.title}
+              when={item.when}
+              bullets={item.bullets}
+              isOpen={openIndex === idx}
+              onToggle={() => setOpenIndex((cur) => (cur === idx ? -1 : idx))}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div style={{ marginTop: "5rem" }}></div>
+
+      <SectionTitleView title={researchExperience.title}/>
+      <div className="exp" >
+        <div className="exp-list">
+          {researchExperience.items.map((item, idx) => (
             <ExperienceItemView
               key={`${item.title}-${item.when}`}
               title={item.title}

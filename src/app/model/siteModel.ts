@@ -48,6 +48,11 @@ export type ExperienceModel = {
   items: ExperienceItem[];
 };
 
+export type ResearchExperienceModel = {
+  title: string;
+  items: ExperienceItem[];
+};
+
 export type ProjectItem = {
   title: string;
   desc: string;
@@ -138,6 +143,7 @@ export type SiteModel = {
   about: AboutModel;
   tech: TechModel;
   experience: ExperienceModel;
+  researchExperience: ResearchExperienceModel;
   projects: ProjectsModel;
   creator: CreatorModel;
   travel: TravelModel;
@@ -266,26 +272,10 @@ export const siteModel: SiteModel = {
   },
 
   experience: {
-    title: "Experience",
+    title: "Tech Experience",
     items: [
       {
-        title: "Graduate Teaching Assistant | Montana State University",
-        when: "Jan 2025 to Present",
-        bullets: [
-          "Assisted in instruction, lab supervision, and grading for courses including Advanced Software Engineering, Data Structures and Algorithms, and Measurement & Instrument Lab.",
-        ],
-      },
-      {
-        title: "Graduate Research Assistant | Montana State University",
-        when: "Jan 2025 to Aug 2025",
-        bullets: [
-          "Researched the Protein Scaffold Gap Filling problem using probabilistic and machine learning approaches.",
-          "Conducted literature reviews on genome and protein clustering algorithms.",
-          "Explored band reduction, 3D CNN models, and semi-supervised learning for classification in hyperspectral spatial data.",
-        ],
-      },
-      {
-        title: "Junior Software Engineer (Backend) | TechnoNext Ltd (US-Bangla Group)",
+        title: "Junior Software Engineer (Backend) | TechnoNext Ltd (US-Bangla Group), Bangladesh",
         when: "Feb 2023 to Jun 2024",
         bullets: [
           "R&D for payment service operations based on microservice architecture.",
@@ -293,16 +283,16 @@ export const siteModel: SiteModel = {
           "Contributed to backend development for an Applicant Tracking System.",
         ],
       },
+      // {
+      //   title: "Research Assistant | Directorate of Research and Extension, CUET",
+      //   when: "Jun 2023 to Jan 2024",
+      //   bullets: [
+      //     "Conducted literature reviews and analyzed recent algorithms for multi-robot path planning.",
+      //     "Designed simulation experiments and case studies for cooperative multi-robot tasks.",
+      //   ],
+      // },
       {
-        title: "Research Assistant | Directorate of Research and Extension, CUET",
-        when: "Jun 2023 to Jan 2024",
-        bullets: [
-          "Conducted literature reviews and analyzed recent algorithms for multi-robot path planning.",
-          "Designed simulation experiments and case studies for cooperative multi-robot tasks.",
-        ],
-      },
-      {
-        title: "Software Engineer Intern (Backend) | Square Health Ltd",
+        title: "Software Engineer Intern (Backend) | Square Health Ltd, Bangladesh",
         when: "Nov 2022 to Jan 2023",
         bullets: [
           "Designed an inventory management system architecture from requirements.",
@@ -310,7 +300,7 @@ export const siteModel: SiteModel = {
         ],
       },
       {
-        title: "Software Engineer (Backend) | Tecognize Solutions Limited",
+        title: "Software Engineer (Backend) | Tecognize Solutions Limited, Bangladesh",
         when: "Jan 2022 to Jun 2022",
         bullets: [
           "Designed and implemented RESTful APIs with Python Flask and deployed to AWS and multiple VMs.",
@@ -319,6 +309,35 @@ export const siteModel: SiteModel = {
       },
     ],
   },
+
+  researchExperience: {
+    title: "Research Experience",
+    items: [
+      {
+        title: "Graduate Research Assistant | Montana State Universit (USA)",
+        when: "Jan 2025 to Aug 2025",
+        bullets: [
+          "Researched the Protein Scaffold Gap Filling problem using probabilistic and machine learning approaches.",
+          "Conducted literature reviews on genome and protein clustering algorithms.",
+          "Explored band reduction, 3D CNN models, and semi-supervised learning for classification in hyperspectral spatial data.",
+          "Assisted in instruction, lab supervision, and grading for courses including Advanced Software Engineering, Data Structures and Algorithms, and Measurement & Instrument Lab.",
+        ],
+      },
+
+      {
+        title: "Research Assistant | Chittagong University of Engineering and Technology (CUET), Bangladesh",
+        when: "Jun 2023 to Jan 2024",
+        bullets: [
+          "Conducted comprehensive literature reviews on multi-robot path-planning",
+          "Analyzed various latest algorithms for multi-robot systems",
+          "Designed experiments for multi-robot systems on simulation environments and applying case studies.",
+        ],
+      },
+
+    ],
+  },
+
+  
 
   projects: {
     title: "Projects",

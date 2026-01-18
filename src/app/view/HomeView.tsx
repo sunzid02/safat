@@ -38,7 +38,7 @@ export default function HomeView() {
         <HeroView hero={model.hero} />
         <AboutView about={model.about} />
         <TechView tech={model.tech} />
-        <ExperienceView experience={model.experience} />
+        <ExperienceView experience={model.experience} researchExperience={model.researchExperience} />
         <ProjectsView projects={model.projects} />
         <CreatorView creator={model.creator} />
         <TravelView travel={model.travel} />
