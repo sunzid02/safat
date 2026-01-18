@@ -9,7 +9,7 @@ import TechView from "./components/sections/Tech/TechView";
 import ExperienceView from "./components/sections/Experience/ExperienceView";
 import PublicationView from "./components/sections/Publications/PublicationView";
 import ProjectsView from "./components/sections/Projects/ProjectsView";
-import CreatorView from "./components/sections/Creator/CreatorView";
+// import CreatorView from "./components/sections/Creator/CreatorView";
 import TravelView from "./components/sections/Travel/TravelView";
 // import ContactView from "./components/sections/Contact/ContactView";
 import RecommendationsView from "./components/sections/Recommendations/RecommendationsView";
@@ -48,7 +48,6 @@ export default function HomeView() {
 
         <PublicationView publication={model.publications} />
 
-        {/* we will use this view for publications */}
         {/* <CreatorView creator={model.creator} /> */}
 
         <TravelView travel={model.travel} />

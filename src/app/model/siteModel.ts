@@ -538,20 +538,69 @@ export const siteModel: SiteModel = {
 
 
 
-  travel: {
-    title: "More",
-    intro: "A few extra highlights from my profile.",
-    flags: [{ emoji: "🇧🇩", name: "Bangladesh" }, { emoji: "🇺🇸", name: "USA" }],
+ travel: {
+    title: "Travel & Mindset",
+    intro:
+      "Traveling has shaped how I think and work. Experiencing different cultures across Europe helped me adapt quickly, communicate clearly, and stay calm while solving complex problems in unfamiliar environments.",
+    flags: [
+      { emoji: "🇧🇩", name: "Bangladesh" },
+      { emoji: "🇺🇸", name: "USA" },
+      { emoji: "🇮🇳", name: "India" },
+    ],
     quote: {
-      text: "Make it work, make it right, make it fast.",
-      author: "Kent Beck",
+      text: "A person who never made a mistake never tried anything new.",
+      author: "Albert Einstein",
     },
     photos: {
-      title: "Highlights",
-      intro: "",
-      hint: "",
-      items: [],
+      title: "Travel Photos",
+      intro: "A few moments from my travels. Use the arrows to browse.",
+      hint: "Use the arrows to browse photos.",
+      items: [
+        {
+          src: "assets/travel/lv.jpg",
+          title: "Las Vegas, USA",
+          desc: `Perched on the red rocks, overlooking a vast and quiet landscape, this moment felt grounded and reflective. The desert stretched endlessly ahead, silent but powerful, making everything else feel small and clear at the same time. Sitting low, steady, and close to the earth, I remember pausing without urgency, just observing the space around me. It was a reminder that progress does not always come from movement. Sometimes it comes from stopping, thinking, and choosing the next step with intention.
+`,
+        },
+
+        {
+          src: "assets/travel/music.jpg",
+          title: "Montana State University, USA",
+          desc: `Sitting on stage, surrounded by colors, patterns, and familiar sounds, this moment felt like a quiet bridge between two worlds. The music carried memories of home while being played far away from it. Every note felt intentional, not performed for applause, but for connection. It was a reminder that culture travels with us, shaping who we are no matter where we stand. In that shared rhythm, distance faded, and belonging felt simple and real.`,
+        },
+        {
+          src: "assets/travel/kakra.jpg",
+          title: "Cox’s Bazar, Bangladesh",
+          desc: `Standing on the wet sand with the sea stretching far into the horizon, I found a small moment of playfulness and curiosity. Holding a tiny crab above me, laughing without thinking, it felt simple and real. The salty air, the open sky, and the quiet rhythm of the waves made everything slow down. There was no rush, no responsibility, just presence. Moments like this remind me that joy does not need planning. Sometimes it is found by noticing small things and letting yourself enjoy them fully.`,
+        },
+
+       {
+          src: "assets/travel/bd_foot.jpg",
+          title: "Dhaka, Bangladesh",
+          desc: `Holding the trophy under the night lights, this moment felt quietly satisfying rather than loud. It was the result of teamwork, consistency, and showing up even when it was tiring. The win itself mattered, but what stayed with me more was the process behind it. Training, coordination, and trust in each other. It reminded me that meaningful results are rarely accidental. They come from patience, discipline, and shared effort, lessons that carry far beyond the field.`,
+        },
+        {
+          src: "assets/travel/prize.jpg",
+          title: "Dhaka, Bangladesh",
+          desc: "Standing on the stage during the prize giving ceremony, this moment felt less about recognition and more about shared effort. Behind the certificate were long hours of preparation, coordination, and learning together as a team. The lights, the audience, and the applause passed quickly, but the sense of responsibility and pride stayed. It reminded me that achievements feel most meaningful when they are collective, built through collaboration, trust, and showing up for each other until the end.",
+        },
+
+        {
+          src: "assets/travel/jhorna.jpg",
+          title: "Amiakhum, Bandarban, Bangladesh",
+          desc: `Sitting beneath the falling water, this moment felt deeply grounding. The sound was loud, constant, and calming all at once, washing away the noise that usually stays in the mind. With closed eyes and open hands, there was nothing to hold onto and nothing to control. Just presence. It reminded me that strength does not always come from pushing forward. Sometimes it comes from surrendering, listening, and letting nature reset what words cannot.`,
+        },
+        {
+          src: "assets/travel/vol.jpg",
+          title: "Chittagong, Bangladesh",
+          desc: `This volunteer badge and shirt represent responsibility more than recognition. Wearing it meant committing time, effort, and attention to causes that mattered beyond personal goals. There was no spotlight in the work itself, only steady contribution and quiet teamwork. It reminded me that meaningful change often happens away from applause. Through consistency, care, and showing up when needed, small actions slowly shape something larger and lasting.`,
+        },
+
+      ],
     },
+
+
+    
   },
 
   recommendations: {
@@ -588,6 +637,5 @@ export const siteModel: SiteModel = {
       { label: "GrabCAD", url: "https://grabcad.com/sarker-safat" },
     ],
   },
-
 
 };

@@ -102,10 +102,15 @@ export default function TravelSliderView({ items }: Props) {
 
               {/* Right Page - Image */}
               <div className="travel-book-right">
-                <div className="travel-image-container">
+                <div
+                  className={`travel-image-container ${
+                    current.src.endsWith("bd_foot.jpg") ? "fix-bd-foot" : ""
+                  }`}
+                >
                   <img src={current.src} alt={current.title} loading="lazy" />
                 </div>
               </div>
+
             </div>
           </div>
 
