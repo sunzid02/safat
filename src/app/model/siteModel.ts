@@ -13,11 +13,12 @@ export type HeroModel = {
     links: {
       label: string;
       url: string;
-      icon: "linkedin" | "github" | "youtube";
+      icon: "linkedin" | "github" | "youtube" | "grabcad" | "scholar";
     }[];
   };
   note: string;
 };
+
 
 export type AboutModel = {
   title: string;
@@ -218,6 +219,16 @@ export const siteModel: SiteModel = {
           label: "YouTube",
           url: "https://www.youtube.com/@safat99",
           icon: "youtube",
+        },
+        {
+          label: "Grabcad",
+          url: "https://grabcad.com/sarker.safat.mahmud-1",
+          icon: "grabcad",
+        },
+        {
+          label: "Google Scholar",
+          url: "https://scholar.google.com/citations?user=A7AvcbQAAAAJ&hl=en",
+          icon: "scholar",
         },
       ],
     },
