@@ -493,11 +493,90 @@ export const siteModel: SiteModel = {
   },
 
   creator: {
-    title: "Research & Teaching",
-    intro:
-      "Alongside industry work, I support teaching and research. I enjoy turning complex topics into clear explanations and building prototypes to validate ideas.",
-    hint: "",
-    videos: [],
+    title: "Content Creator",
+    
+    intro: "I also create developer focused and engineering content where I document hands on projects in robotics, IoT, embedded systems, and applied machine learning. My videos focus on practical implementations like autonomous robots, smart home systems, sensor based analysis, and hardware software integration, often explained step by step so others can learn from real projects. Alongside serious engineering topics, I enjoy adding a creative and light touch through simple explanations and occasional humor, because learning engineering should feel curious, engaging, and human.",
+    
+    hint: "Use the arrows to browse. Press play to load the video.",
+    
+    videos: [
+      {
+        id: "_uvGQ6cCDds",
+        title: "OpenCV based Autonomous Car with Raspberry Pi",
+        desc: `Inspired by "Murtaza's Workshop" a popular YouTube channel for robotics and AI though our Pi 4 has a poor configuration. As a result, we have to follow a different lightweight approach to solving all the problems. The video is long but I hope you will like this.
+                I couldn't finish this project without the help of Md. Iftekher Hossain vai and my friend Semonti did a tough job in making the video. So much grateful to them 😍 😍`,
+        url: "https://www.youtube.com/watch?v=_uvGQ6cCDds",
+      },
+      {
+        id: "1279245203273771",
+        title: "Eluveitie - Isara (Instrumental Cover)",
+        desc: "This performance is way too special for me for several reasons. Covering Eluveitie's Isara was one of my many ambitions when I started playing flute in my undergraduate life. It was extremely difficult and without Asad Vai's guidance, this would never have been possible. He and Farshina Apu kept their nerves calm throughout our whole rehearsal sessions. Had the chance to play with my life partner which I had never thought of before. 😍👻❤️❤️",
+        url: "https://www.facebook.com/reel/1279245203273771",
+      },
+
+      {
+        id: "9XfIP5cwh9o",
+        title: "NodeMCU based IoT-Box | A Smart Home Automation System",
+        desc: "An IoT project of NodeMCU-based  IoT Box which is a fully embedded system of controlling AC outputs over the internet using an App and Web Dashboard. This project was done back in the days of Covid-19.",
+        url: "https://www.youtube.com/watch?v=9XfIP5cwh9o",
+      },
+      {
+        id: "Nc4FjDRkLv0",
+        title: "Line Follower Robot",
+        desc: "During my undergraduate university life, I participated in many robotics competitions, where implementing faster LFR was a crucial and harder task. This video was captured probably back in 2018 when we were preparing for one of the LFR contests, which I can't remember right now.",
+        url: "https://www.youtube.com/watch?v=Nc4FjDRkLv0",
+      },
+
+
+      // {
+      //   id: "1630771997837990",
+      //   title: "Ice Skating",
+      //   desc: "Never give up! Practiced a lot to improve my skating skills. Fell so many times but got up again and again. Finally, I can skate smoothly now. Ice skating is not just a sport for me; it's a journey of perseverance and determination. Every fall taught me to rise stronger, and every glide filled me with joy. Grateful to Asad Vai for teaching me patiently and making this experience unforgettable. ❄️⛸️❤️",
+      //   url: "https://www.facebook.com/reel/1630771997837990",
+      // },
+
+      {
+        id: "661860007647465",
+        title: "Unsuccessful cover>> Hariye jao",
+        desc: "This is an unsuccessful cover of a popular song 'Hariye jao' by Arbovirus. I tried my best to make it as close to the original as possible but couldn't reach that level. However, I had a lot of fun making this video and hope you enjoy watching it too! Special thanks to Asad Vai for helping me with the recording and editing process. 😊🎶",
+        url: "https://www.facebook.com/reel/661860007647465",
+      },
+
+
+      {
+        id: "UXQPxg_8do",
+        title: "Arduino based GameBot in TinkerCAD",
+        desc: `The project is made and simulated in TinkerCAD. The goal is to make a pong game that challenges a player's reaction time by making them stop a sweeping series of LEDs at a specified point. 
+
+                After micro-wins a big win comes where it will flash to notify the user. 
+                Also, a fail will give a different sound by the buzzer.
+                When the number of lives remaining will come down to zero. The game is over. 
+
+                Arduino's port manipulation gives a better response time and consumes less memory.`,
+        url: "https://www.youtube.com/watch?v=UXQPxg_8do",
+      },
+      {
+        id: "p5eDBFT5zkI",
+        title: "Mechanical Vibration Analysis using Arduino and ADXL335 Sensor",
+        desc: `The main target of this project is to find unknown 
+        vibrations and analyze them with respect to time. Two ADXL335 sensors were used. 
+        We used all the Gaussian and bandpass filters for noise reduction and Fast Fourier transform for finding the natural frequency. I hope you'll like that.`,
+        url: "https://www.youtube.com/watch?v=p5eDBFT5zkI",
+      },
+      {
+        id: "4zrcsfwV1TE",
+        title: "PIR Sensor Based Alarm (Bangla Explanation)",
+        desc: `I have made a DIY video about PIR Sensor Based Alarm which can be used for many kinds of security purposes. In this video, I've just described how the circuitry works. I've used Proteus software for this circuit. I hope people may like this. The main demonstration project video's link is given below. Hope you might like that too.`,
+        url: "https://www.youtube.com/watch?v=4zrcsfwV1TE",
+      },
+      {
+        id: "8pGMaKcStik",
+        title: "Simple PIR Sensor Based Alarm (Bengali Demonstration)",
+        desc: `A simple homemade DIY project for security and surveillance system. With PIR motion sensor a buzzer is attached. When any person comes to the range of the sensor a 20 sec(around) beep will be generated. This will be useful where we want a response if we wanna detect people in certain areas.`,
+        url: "https://www.youtube.com/watch?v=8pGMaKcStik",
+      },
+
+    ],
   },
 
   publications: {
