@@ -140,6 +140,23 @@ export type TravelModel = {
   };
 };
 
+export type PublicationItem = {
+  id: string;
+  title: string;
+  desc: string;
+  meta: string;
+  url: string;     // DOI or publisher link
+  cta?: string;    // "Open DOI"
+};
+
+export type PublicationsModel = {
+  title: string;
+  intro: string;
+  hint: string;
+  items: PublicationItem[];
+};
+
+
 export type SiteModel = {
   brand: { name: string; href: string };
   nav: NavItem[];
@@ -155,6 +172,8 @@ export type SiteModel = {
   travel: TravelModel;
   contact: ContactModel; 
   recommendations: RecommendationsModel;
+  publications: PublicationsModel;   // ✅ new
+
 
 };
 
@@ -166,7 +185,9 @@ export const siteModel: SiteModel = {
     { id: "stack", label: "Tech", href: "#stack" },
     { id: "experience", label: "Experience", href: "#experience" },
     { id: "projects", label: "Projects", href: "#projects" },
-    { id: "creator", label: "Content", href: "#creator" },
+    // { id: "creator", label: "Content", href: "#creator" },
+    { id: "publications", label: "Publications", href: "#publications" }, // ✅
+
     { id: "travel", label: "Travelling", href: "#travel" },
     { id: "recommendations", label: "Recommendations", href: "#recommendations" },
     // { id: "contact", label: "Contact", href: "#contact" },
@@ -390,7 +411,7 @@ export const siteModel: SiteModel = {
         bullets: [
           "Established a network for campus chess enthusiasts to facilitate idea exchange and organized online and offline tournaments.",
           "Coordinated events and managed communications to foster a vibrant chess community on campus.",
-    ]},
+      ]},
 
     ],
   },
@@ -478,6 +499,44 @@ export const siteModel: SiteModel = {
     hint: "",
     videos: [],
   },
+
+  publications: {
+  title: "Publications",
+  intro: "Selected publications and research outputs.",
+  hint: "Use arrows to browse. Open to view the DOI page.",
+  items: [
+    {
+      id: "pub-ico-2022",
+      title:
+        "A Deep Convolutional Neural Network Based Classification Approach for Sleep Scoring of NFLE Patients",
+      meta: "Mahmud, S.S. et al. (2022) | ICO 2021, LNNS Vol 371, Springer",
+      desc: "Conference chapter presenting a CNN based approach for sleep scoring of NFLE patients.",
+      url: "https://doi.org/10.1007/978-3-030-93247-3_35",
+      cta: "Open DOI"
+    },
+    {
+      id: "pub-wiley-2024",
+      title: "Path Planning Approaches in Multi-robot System: A Review",
+      meta: "Banik, S. et al. (2024) | Engineering Reports, Wiley",
+      desc: "Review of multi-robot path planning approaches, methods, and tradeoffs.",
+      url: "https://doi.org/10.1002/eng2.13035",
+      cta: "Open DOI"
+    },
+    {
+      id: "pub-jiae-2022",
+      title:
+        "Design & Fabrication of Automatic Color & Weight-Based Sorting System on Conveyor Belt",
+      meta: "Nuva, T.J. et al. (2022) | JIAE 2(2), 147–157",
+      desc: "Design and fabrication of a conveyor belt system that sorts items by color and weight.",
+      url: "https://doi.org/10.51662/jiae.v2i2.87",
+      cta: "Open DOI"
+    }
+  ]
+},
+
+
+
+
 
   travel: {
     title: "More",

@@ -7,6 +7,7 @@ import HeroView from "./components/sections/Hero/HeroView";
 import AboutView from "./components/sections/About/AboutView";
 import TechView from "./components/sections/Tech/TechView";
 import ExperienceView from "./components/sections/Experience/ExperienceView";
+import PublicationView from "./components/sections/Publications/PublicationView";
 import ProjectsView from "./components/sections/Projects/ProjectsView";
 import CreatorView from "./components/sections/Creator/CreatorView";
 import TravelView from "./components/sections/Travel/TravelView";
@@ -38,10 +39,20 @@ export default function HomeView() {
         <HeroView hero={model.hero} />
         <AboutView about={model.about} />
         <TechView tech={model.tech} />
+        
         <ExperienceView experience={model.experience} researchExperience={model.researchExperience} leadershipExperience={model.leadershipExperience} />
+        
+
+        
         <ProjectsView projects={model.projects} />
-        <CreatorView creator={model.creator} />
+
+        <PublicationView publication={model.publications} />
+
+        {/* we will use this view for publications */}
+        {/* <CreatorView creator={model.creator} /> */}
+
         <TravelView travel={model.travel} />
+
         <RecommendationsView recommendations={model.recommendations} />
         {/* <ContactView contact={model.contact} /> */}
         <FooterView contact={model.contact} brand={model.brand} />
