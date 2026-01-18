@@ -18,7 +18,7 @@ export default function RecommendationsView({ recommendations }: Props) {
 
       <div className="recommendations-linkedin-link">
         <a 
-          href="https://www.linkedin.com/in/sarker-sunzid-mahmud/details/recommendations/"
+          href="https://www.linkedin.com/in/safat99/details/recommendations/"
           target="_blank"
           rel="noreferrer"
           className="linkedin-badge"

@@ -604,27 +604,24 @@ export const siteModel: SiteModel = {
   },
 
   recommendations: {
-    title: "Publications",
-    intro: "Selected publications and research outputs.",
+    title: "Recommendations",
+    intro: "Kind words from colleagues and clients I've worked with over the years.",
     items: [
       {
-        name: "Mahmud, S.S.",
-        role: "Publication",
-        company: "Springer (ICO 2021)",
-        text: "A Deep Convolutional Neural Network Based Classification Approach for Sleep Scoring of NFLE Patients (2022).",
+        name: "Mohammad Mohitul Islam",
+        role: "SWE",
+        company: "Technonext Ltd (US-Bangla Group)",
+        photo: "assets/recommendations/MMI.jfif",
+        text: "I've worked closely with Mr. Safat on the \"Applicant Tracking System\" project and have been consistently impressed by his intelligence, hard work, and helpfulness. His exceptional problem-solving and debugging skills were evident from the start. He collaborates effectively with the QA team, ensuring deadlines and client requirements are met without issue. Mr. Safat would be a valuable addition to any development team, and I highly recommend him.",
       },
       {
-        name: "Banik, S. C., & Mahmud, S. S.",
-        role: "Publication",
-        company: "Engineering Reports (Wiley)",
-        text: "Path Planning Approaches in Multi-robot System: A Review (2024).",
+        name: "Tahmia Akter",
+        role: "Software Engineer",
+        company: "Tecognize Solutions Limited",
+        photo: "assets/recommendations/TA.jfif",
+        text: "I have worked with Safat in the same team. He is an excellent backend developer with a lot of skills. When it comes to learning and implementing new tools and technologies he is the best. In addition he is a team player always willing to help his team mates. He surely can be a great asset to a team.",
       },
-      {
-        name: "Nuva, T. J., Ahmed, M. I., & Mahmud, S. S.",
-        role: "Publication",
-        company: "JIAE",
-        text: "Design & Fabrication of Automatic Color & Weight-Based Sorting System on Conveyor Belt (2022).",
-      },
+     
     ],
   },
 
