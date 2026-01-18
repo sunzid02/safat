@@ -24,12 +24,26 @@ export default function ProjectsView({ projects }: Props) {
         <CardView key={p.title} title={p.title} subtitle={p.meta}>
           <p>{p.desc}</p>
 
-          {p.url && (
-            <p className="card-actions">
-              <a href={p.url} target="_blank" rel="noreferrer">
-                View Project
-              </a>
-            </p>
+          {(p.url || p.demo || p.rpaper) && (
+            <div className="card-actions">
+              {p.url && (
+                <a href={p.url} target="_blank" rel="noreferrer">
+                  View Project
+                </a>
+              )}
+
+              {p.demo && (
+                <a href={p.demo} target="_blank" rel="noreferrer">
+                  Watch Demo
+                </a>
+              )}
+
+              {p.rpaper && (
+                <a href={p.rpaper} target="_blank" rel="noreferrer">
+                  Research Paper
+                </a>
+              )}
+            </div>
           )}
         </CardView>
       ))}

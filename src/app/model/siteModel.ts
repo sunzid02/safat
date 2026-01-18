@@ -53,6 +53,8 @@ export type ProjectItem = {
   desc: string;
   meta: string;
   url?: string;
+  demo?: string;
+  rpaper?: string;
 };
 
 export type ProjectsModel = {
@@ -322,35 +324,72 @@ export const siteModel: SiteModel = {
     title: "Projects",
     intro: "A few projects across robotics, backend systems, and applied ML.",
     items: [
+
       {
-        title: "Multi-Robot Task Allocation (Undergrad Thesis)",
-        desc: "Built a ROS + Gazebo simulation for multi-robot task allocation and compared vacancy chain vs auction-based strategies in dynamic distributed settings.",
-        meta: "ROS • Gazebo • Multi-robot systems",
+        title: "NodeMCU-based IoT Box",
+        desc: "End-to-end IoT system with custom PCB, Firebase backend, web interface, and mobile control app.",
+        meta: "IoT • Firebase • Embedded",
+        url: "https://github.com/Safat99/IoT-Box",
+        demo: "https://www.youtube.com/watch?v=9XfIP5cwh9o",
+        rpaper: "https://www.researchgate.net/publication/354860121_157-P-4_Development_and_Optimization_of_a_Real-time_Server-based_IoT_Box_A_Smart_Home_Automation_System_and_its_Subsequent_Fabrication"
       },
       {
         title: "OpenCV-based Self-Driving Car",
         desc: "Raspberry Pi-based autonomous robot using computer vision.",
         meta: "Raspberry Pi • OpenCV • Python",
+        url: "https://github.com/Safat99/openCV-based-Autonomous-car-with-Raspberry-Pi",
+        demo: "https://www.youtube.com/watch?v=_uvGQ6cCDds"
+
       },
+
+      {
+        title: "Mechanical Vibration Analysis of a Car body with MATLAB",
+        desc: "Measured unknown vibrations using ADXL335, a 3-axis accelerometer, and analyzed with MATLAB and Excel.",
+        meta: "MATLAB • Mechanical Engineering",
+        url: "https://github.com/Safat99/Mechanical_Vibration_Analysis_with_MATLAB_and_Arduino",
+        demo: "https://www.linkedin.com/feed/update/urn:li:activity:6836175024676843520/"
+      },
+
+
+      {
+        title: "Audio Classification with UrbanSound8k Dataset:",
+        desc: "MLP, CNN-based sound classifier, can classify between the 10 classes sounds of UrbanSound8K dataset.",
+        meta: "MLP • CNN • TensorFlow",
+        url: "https://github.com/Safat99/audio_classifier_of_urbansound8k_dataset"
+      },
+
+      {
+        title: "Multi-Robot Task Allocation (Undergrad Thesis)",
+        desc: "Built a ROS + Gazebo simulation for multi-robot task allocation and compared vacancy chain vs auction-based strategies in dynamic distributed settings.",
+        meta: "ROS • Gazebo • Multi-robot systems",
+      },
+
       {
         title: "Sleep Stage Classification (CAP Sleep Database)",
         desc: "Deep CNN-based sleep stage classifier for NFLE patients.",
         meta: "Deep Learning • CNN • TensorFlow",
+        url: "https://github.com/Safat99/Sleep_stage_classifciation_of_epilepsy_patient"
       },
-      {
-        title: "NodeMCU-based IoT Box",
-        desc: "End-to-end IoT system with custom PCB, Firebase backend, web interface, and mobile control app.",
-        meta: "IoT • Firebase • Embedded",
-      },
+
+
+
       {
         title: "Health AI Receptionist Backend (Ongoing)",
         desc: "Microservice-based backend including face recognition and other supporting services.",
         meta: "Microservices • Backend • ML",
+        url: "https://github.com/Safat99/Health_AI_Receptionist"
       },
       {
-        title: "DurbinX Backend APIs",
-        desc: "Designed and shipped 50+ Flask APIs and third-party integrations for a parcel delivery platform.",
+        title: "Deep CNN-based Pedestrian Detection",
+        desc: "VGG16, VGG19, and ResNet50 were used. ",
         meta: "Python • Flask • PostgreSQL • AWS",
+        url: "https://github.com/Safat99/pedestrian_detection_with_diff_DL_model"
+      },
+      {
+        title: "Deep CNN-based Emergency Vehicle Detection",
+        desc: "YOLO, VGG16, and VGG19 were used.",
+        meta: "Python • Flask • PostgreSQL • AWS",
+        url: "https://github.com/Safat99/emergency_vehicle_detection"
       },
     ],
   },
