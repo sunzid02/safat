@@ -53,6 +53,11 @@ export type ResearchExperienceModel = {
   items: ExperienceItem[];
 };
 
+export type LeadershipExperienceModel = {
+  title: string;
+  items: ExperienceItem[];
+};
+
 export type ProjectItem = {
   title: string;
   desc: string;
@@ -144,6 +149,7 @@ export type SiteModel = {
   tech: TechModel;
   experience: ExperienceModel;
   researchExperience: ResearchExperienceModel;
+  leadershipExperience: LeadershipExperienceModel;
   projects: ProjectsModel;
   creator: CreatorModel;
   travel: TravelModel;
@@ -311,7 +317,7 @@ export const siteModel: SiteModel = {
   },
 
   researchExperience: {
-    title: "Research Experience",
+    title: "Research & Mentoring Experience",
     items: [
       {
         title: "Graduate Research Assistant | Montana State Universit (USA)",
@@ -333,6 +339,58 @@ export const siteModel: SiteModel = {
           "Designed experiments for multi-robot systems on simulation environments and applying case studies.",
         ],
       },
+
+      {
+        title: "Mentoring Experiences",
+        when: "March 2020 to Jan 2022",
+        bullets: [
+          "Participated in a day-long paid workshop on ‘Industry 4.0’ at the Bangladesh Industrial Technical Assistance Center (BITAC) in August and January 2022.",
+          "Trained freshman year students at our university in a five-day workshop on Arduino and basic electronics, March 2020.",
+          "Instructor at a two-day workshop on Line-Follower and Obstacle Avoider Robot at Cantonment Public Collegiate School, Chittagong, 2018.",
+        ],
+      },
+
+    ],
+  },
+
+  leadershipExperience: {
+    title: "Leadership Experience",
+    items: [
+      {
+        title: "Robo Mechatronics Association, Bangladesh (RMA) | Vice President",
+        when: "Feb 2021 to Aug 2022",
+        bullets: [
+          "Organized various seminars, workshops and competitions to enlighten the university students with state-of-the-art mechatronics technology and industry level automation.",
+          "Led chapter of 150+ members to work towards goals that improve and promote community service, academics, and unity.",
+          "Participated in a total of 17 inter and intra-university national robotics competitions and hackathons",
+        ],
+      },
+
+      {
+        title: "IEOM CUET Student Chapter | Research & Publication Secretary (details)",
+        when: "Feb 2021 to Aug 2022",
+        bullets: [
+          "Assisted the team in arranging an online Inter-University Scientific Poster Presentation Competition.",
+          "Awarded with IEOM Outstanding Student Chapter Award-GOLD during our tenure.",
+        ],
+      },
+
+      {
+        title: "Volunteer for Bangladesh | Institute Representative",
+        when: "Mar 2019 to Jul 2019",
+        bullets: [
+          "Acted as a liaison, connecting campus volunteers with initiatives supporting underprivileged children’s health, education, and well-being.",
+          "Promoted environmental cleanliness and actively participated in volunteer activities to support the community.",
+        ],
+      },
+
+      {
+        title: "CUET Chess Club | Founding Technical Secretary",
+        when: "Oct 2021 to Sep 2022",
+        bullets: [
+          "Established a network for campus chess enthusiasts to facilitate idea exchange and organized online and offline tournaments.",
+          "Coordinated events and managed communications to foster a vibrant chess community on campus.",
+    ]},
 
     ],
   },
