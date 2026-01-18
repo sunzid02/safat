@@ -205,7 +205,7 @@ export function useHandControlMediaPipeSDK({
         await camera.start();
 
         initializingRef.current = false;
-        console.log("✅ MediaPipe Hands SDK initialized");
+        // console.log("✅ MediaPipe Hands SDK initialized");
 
       } catch (e) {
         const msg = e instanceof Error ? e.message : "Hand control failed";

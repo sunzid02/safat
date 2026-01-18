@@ -254,7 +254,7 @@ export const siteModel: SiteModel = {
 
   tech: {
     title: "Tech Stack",
-    hint: "Explore my stack as a 3D cube. Drag to rotate, or use the buttons to jump to a side.",
+    hint: "A curated overview of my technology stack, grouped by core skill areas.",
     faces: [
       {
         title: "Backend",
