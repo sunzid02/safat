@@ -1,0 +1,231 @@
+/* ===================================
+   TECH STACK CUBE WITH WATER
+   Complete CSS - Use this only
+   =================================== */
+
+/* Container */
+.tech-stage {
+  width: 100%;
+  padding: 2rem 1rem;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* 3D Scene */
+.scene {
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px;
+}
+
+/* The Cube */
+.tech-cube {
+  --size: 380px;
+  --half: 190px;
+  
+  width: var(--size);
+  height: var(--size);
+  position: relative;
+  transform-style: preserve-3d;
+  cursor: grab;
+}
+
+.tech-cube:active {
+  cursor: grabbing;
+}
+
+/* Each Face */
+.tech-face {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 16px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  
+  /* Crystal clear glass effect */
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Position each face in 3D */
+.tech-face-0 { transform: rotateY(0deg) translateZ(var(--half)); }
+.tech-face-1 { transform: rotateY(90deg) translateZ(var(--half)); }
+.tech-face-2 { transform: rotateY(180deg) translateZ(var(--half)); }
+.tech-face-3 { transform: rotateY(-90deg) translateZ(var(--half)); }
+.tech-face-4 { transform: rotateX(90deg) translateZ(var(--half)); }
+.tech-face-5 { transform: rotateX(-90deg) translateZ(var(--half)); }
+
+/* ===================================
+   WATER BACKGROUND
+   =================================== */
+
+.water-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  
+  background: 
+    radial-gradient(circle at 30% 30%, rgba(100, 200, 255, 0.5), transparent 60%),
+    radial-gradient(circle at 70% 60%, rgba(60, 160, 255, 0.45), transparent 50%),
+    linear-gradient(180deg,
+      rgba(50, 150, 230, 0.6) 0%,
+      rgba(35, 110, 190, 0.7) 50%,
+      rgba(25, 90, 170, 0.8) 100%
+    );
+  
+  animation: water 8s ease-in-out infinite;
+}
+
+/* Caustics (light patterns) */
+.water-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.7;
+  
+  background-image:
+    radial-gradient(circle at 20% 50%, transparent 20%, rgba(180, 240, 255, 0.4) 21%, transparent 22%),
+    radial-gradient(circle at 60% 30%, transparent 15%, rgba(150, 220, 255, 0.35) 16%, transparent 17%),
+    radial-gradient(circle at 40% 70%, transparent 18%, rgba(165, 230, 255, 0.38) 19%, transparent 20%);
+  
+  background-size: 200% 200%, 150% 150%, 180% 180%;
+  animation: caustics 6s ease-in-out infinite;
+}
+
+/* Different timing per face */
+.tech-face-0 .water-bg { animation-delay: 0s; }
+.tech-face-1 .water-bg { animation-delay: -1.3s; }
+.tech-face-2 .water-bg { animation-delay: -2.7s; }
+.tech-face-3 .water-bg { animation-delay: -4s; }
+.tech-face-4 .water-bg { animation-delay: -5.3s; }
+.tech-face-5 .water-bg { animation-delay: -6.7s; }
+
+/* Animations */
+@keyframes water {
+  0%, 100% { background-position: 0% 0%, 100% 100%, 0% 0%; }
+  50% { background-position: 100% 100%, 0% 0%, 0% 0%; }
+}
+
+@keyframes caustics {
+  0%, 100% { background-position: 0% 0%, 100% 100%, 50% 50%; }
+  50% { background-position: 100% 100%, 0% 0%, 100% 0%; }
+}
+
+/* ===================================
+   CONTENT LAYER
+   =================================== */
+
+.tech-face-inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  /* Crystal clear - very transparent */
+  background: rgba(20, 35, 55, 0.05);
+}
+
+/* Header */
+.tech-face-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tech-face-head h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Badge */
+.tech-face-badge {
+  font-size: 0.75rem;
+  color: #7aa2ff;
+  background: rgba(122, 162, 255, 0.25);
+  border: 1px solid rgba(122, 162, 255, 0.4);
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-weight: 500;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+}
+
+/* Items Grid */
+.tech-face-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+/* Technology Chips */
+.tech-chip {
+  font-size: 0.85rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  font-weight: 500;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  transition: all 0.2s;
+}
+
+.tech-chip:hover {
+  background: rgba(122, 162, 255, 0.2);
+  border-color: rgba(122, 162, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Tip Text */
+.tech-tip {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+
+@media (max-width: 768px) {
+  .tech-cube {
+    --size: 320px;
+    --half: 160px;
+  }
+  
+  .scene {
+    height: 420px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-cube {
+    --size: 280px;
+    --half: 140px;
+  }
+  
+  .tech-chip {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
