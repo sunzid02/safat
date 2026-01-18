@@ -1,4 +1,4 @@
-# Sarker Sunzid Mahmud | Portfolio
+# Sarker Safat Mahmud | Portfolio
 
 This repository contains the source code for my personal portfolio website, built with React and Vite and deployed on GitHub Pages.
 

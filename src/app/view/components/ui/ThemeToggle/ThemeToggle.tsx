@@ -2,18 +2,30 @@ import { useState, useEffect } from "react";
 import "./theme-toggle.css";
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<'dark' | 'rain' | 'snow'>('dark');
+  const [theme, setTheme] = useState<'dark' | 'rain' | 'snow'>('snow');
   // const [theme, setTheme] = useState<'dark' | 'light' | 'rain' | 'snow'>('dark');
   const [isOpen, setIsOpen] = useState(false);
 
+  // useEffect(() => {
+  //   // Load saved theme
+  //   const savedTheme = localStorage.getItem('portfolio-theme') as typeof theme;
+  //   if (savedTheme) {
+  //     setTheme(savedTheme);
+  //     applyTheme(savedTheme);
+  //   }
+  // }, []);
+
+
+  // snow
   useEffect(() => {
-    // Load saved theme
-    const savedTheme = localStorage.getItem('portfolio-theme') as typeof theme;
-    if (savedTheme) {
-      setTheme(savedTheme);
-      applyTheme(savedTheme);
-    }
+    const savedTheme = localStorage.getItem('portfolio-theme') as typeof theme | null;
+
+    const initialTheme = savedTheme ?? 'snow';
+
+    setTheme(initialTheme);
+    applyTheme(initialTheme);
   }, []);
+    
 
   const applyTheme = (newTheme: typeof theme) => {
     document.documentElement.setAttribute('data-theme', newTheme);
