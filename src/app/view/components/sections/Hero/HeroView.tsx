@@ -19,7 +19,7 @@ export default function HeroView({ hero }: Props) {
       <div className="hero-grid">
         <div className="hero-media" aria-hidden="true">
           <img className="hero-photo" src={heroPhoto} alt="" />
-          <div className="hero-caption">Las Vegas, USA</div>
+          <div className="hero-caption">Dhaka, BD</div>
         </div>
 
         <div className="hero-content">

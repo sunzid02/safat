@@ -185,7 +185,7 @@ export const siteModel: SiteModel = {
     { id: "stack", label: "Tech", href: "#stack" },
     { id: "experience", label: "Experience", href: "#experience" },
     { id: "projects", label: "Projects", href: "#projects" },
-    // { id: "creator", label: "Content", href: "#creator" },
+    { id: "creator", label: "Content", href: "#creator" },
     { id: "publications", label: "Publications", href: "#publications" }, // ✅
 
     { id: "travel", label: "Travelling", href: "#travel" },
@@ -629,9 +629,9 @@ export const siteModel: SiteModel = {
     email: "sarkersafatmahmud@montana.edu",
     links: [
       { label: "GitHub", url: "https://github.com/safat99" },
-      { label: "LinkedIn", url: "https://www.linkedin.com/in/sarker-safat-mahmud" },
-      { label: "Google Scholar", url: "https://scholar.google.com/citations?user=sarker-safat" },
-      { label: "GrabCAD", url: "https://grabcad.com/sarker-safat" },
+      { label: "LinkedIn", url: "https://www.linkedin.com/in/safat99/" },
+      { label: "Google Scholar", url: "https://scholar.google.com/citations?user=A7AvcbQAAAAJ&hl=en" },
+      { label: "GrabCAD", url: "https://grabcad.com/sarker.safat.mahmud-1" },
     ],
   },
 
