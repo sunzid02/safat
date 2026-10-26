@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { HeroModel } from "../../../../model/siteModel";
-import heroPhoto from "../../../../../../public/assets/travel/pro_pic.jpg";
+const heroPhoto = `${import.meta.env.BASE_URL}assets/travel/pro_pic.jpg`;
 import Icon from "../../ui/Icon/Icon";
 
 type Props = { hero: HeroModel };
